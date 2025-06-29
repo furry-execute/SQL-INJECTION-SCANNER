@@ -7,7 +7,7 @@ this bash file can search for vuln SQL INJECTION via URLs, And also finding subd
 ## Installation
 ```bash
 git clone https://github.com/furry-execute/SQL-INJECTION-SCANNER.git
-cd KRD-Scanner
+cd SQL-INJECTION-SCANNER
 chmod +x SCANNER.sh
 ./SCANNER.sh
 ```
@@ -30,6 +30,12 @@ chmod +x SCANNER.sh
 - Automated vulnerability scanning (Nuclei)
 - Scan resumption capability
 - Resource optimization (auto-detects VM/host)
+
+## If the script didn't Downloaded use this command instead:
+```
+( command -v pkg >/dev/null && echo "[+] Termux detected" && pkg update -y && pkg install -y golang git jq sqlmap && go install github.com/tomnomnom/waybackurls@latest && go install github.com/lc/gau/v2/cmd/gau@latest && go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest && go install github.com/projectdiscovery/httpx/cmd/httpx@latest && go install github.com/tomnomnom/anew@latest && go install github.com/tomnomnom/gf@latest && go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest ) || ( echo "[+] Rooted Linux detected" && sudo apt update -y && sudo apt install -y golang-go git jq sqlmap && go install github.com/tomnomnom/waybackurls@latest && go install github.com/lc/gau/v2/cmd/gau@latest && go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest && go install github.com/projectdiscovery/httpx/cmd/httpx@latest && go install github.com/tomnomnom/anew@latest && go install github.com/tomnomnom/gf@latest && go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest )
+
+```
 
 ## Output Structure
 ```
